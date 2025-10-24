@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zelly Beats</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JS (deferred) -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="dot"></span> Zelly Beats</div>
+
+      <button class="menu-btn" aria-label="Toggle Menu">☰</button>
+
+      <nav>
+        <ul id="menu">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#beats">Beats</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<main id="home" class="hero container">
+  <h1>Zelly Beats</h1>
+  <p class="oneline">
+    Premium Hip-Hop, Trap, Drill and Afro beats — produced by Zelly Beats with passion and precision.
+  </p>
+
+  <div class="cta">
+    <a class="button primary" href="#beats">Explore Beats</a>
+    <a class="button" href="#contact">Contact</a>
+  </div>
+</main>
+
+
+<section id="beats" class="section">
+  <div class="container">
+    <h2>Beats</h2>
+
+    <div class="beats-grid">
+      <!-- Beat 1 -->
+      <article class="beat-card">
+        <img class="beat-cover" src="Covers\Cover 1.png" alt="Hard Trap cover">
+        <div class="beat-meta">
+          <h3>Hard Trap</h3>
+          <p class="muted">Trap • 120 BPM • D Min</p>
+        </div>
+        <audio controls preload="none" src="Beats\Alone - Trap beat - 120 BPM - D Min - MAS 9.mp3"></audio>
+      </article>
+
+      <!-- Beat 2 -->
+      <article class="beat-card">
+        <img class="beat-cover" src="Covers\Cover 2.jpg" alt="Melodic Trap cover">
+        <div class="beat-meta">
+          <h3>Melodic Trap</h3>
+          <p class="muted">Trap • 125 BPM • B Min</p>
+        </div>
+        <audio controls preload="none" src="Beats\Aquamarine - Melodic Trap - 125 BPM - B Min - 09.08.23 ( CYM Beat Contest ) MAS 6.mp3"></audio>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2>Contact</h2>
+
+    <form id="contactForm" class="contact-form" autocomplete="on">
+      <div class="row-2">
+        <input class="contact-input" type="text" name="name" placeholder="Your name" required />
+        <input class="contact-input" type="email" name="email" placeholder="E-mail address" required />
+      </div>
+
+      <input class="contact-input" type="text" name="subject" placeholder="Subject" required />
+
+      <textarea class="contact-input contact-textarea" name="message" rows="6" placeholder="Message" required></textarea>
+
+      <button class="send-btn" type="submit">SEND MESSAGE</button>
+    </form>
+    
+  </div>
+</section>
+
+
+
+  <footer>
+    <div class="container">© <span id="year"></span> Zelly Beats • Built with HTML + CSS + JS</div>
+  </footer>
+</body>
+</html>
